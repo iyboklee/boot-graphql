@@ -1,0 +1,10 @@
+type Part {
+    seq: ID!
+    name: String!
+    headquarters: String!
+}
+
+type Query {
+    findAllParts: [Part]!
+    findPart(seq: ID!) : Part!
+}

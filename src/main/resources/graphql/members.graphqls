@@ -1,0 +1,11 @@
+type Member {
+    seq: ID!
+    name: String!
+    workGroup: String!
+    part: Part!
+}
+
+extend type Query {
+    findAllMembers: [Member]!
+    findMember(seq: ID!) : Member!
+}
